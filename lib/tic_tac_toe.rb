@@ -106,11 +106,11 @@ def play(board)
   puts "ho"
   loop do
     if draw?(board)
-      return "draw"
+      puts "draw"
       break
     end
     if over?(board) && won?(board)
-      return "#{board[won?(board)[1]]}"
+      puts "#{board[won?(board)[1]]}"
       break
     else
       turn (board)
