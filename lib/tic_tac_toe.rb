@@ -35,7 +35,7 @@ def turn(board)
   display_board(board)
   #else
     #turn(board)
-  end
+  #end
 end
 
 def turn_count(board)
