@@ -131,7 +131,7 @@ def play(board)
     return
   end
   if won?(board)
-    puts "Congratulations #{board[won?(board)[1]]}!"
+    puts "Congratulations #{board[won?(board)[0]]}!"
     return
   end
 end
