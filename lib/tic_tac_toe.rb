@@ -106,17 +106,31 @@ def winner(board)
 end
 
 # Define your play method below
+# def play(board)
+#   loop do
+#     if draw?(board)
+#       puts "draw"
+#       break
+#     end
+#     if over?(board) && won?(board)
+#       puts "#{board[won?(board)[1]]}"
+#       break
+#     else
+#       turn (board)
+#     end
+#   end
+# end
+
 def play(board)
-  loop do
-    if draw?(board)
-      puts "draw"
-      break
-    end
-    if over?(board) && won?(board)
-      puts "#{board[won?(board)[1]]}"
-      break
-    else
-      turn (board)
-    end
+  until over?(board)
+    turn(board)
+  end
+
+  if draw?(board)
+    puts "draw"
+  end
+  if won?(board)
+    puts "#{board[won?(board)[1]]}"
   end
 end
+#
