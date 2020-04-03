@@ -103,7 +103,6 @@ end
 
 # Define your play method below
 def play(board)
-  puts "ho"
   loop do
     if draw?(board)
       puts "draw"
