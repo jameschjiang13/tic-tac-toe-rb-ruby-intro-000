@@ -108,7 +108,7 @@ def play(board)
       return "draw"
       break
     end
-    if over?(board) && won?(board)
+    if won?(board)
       return "#{board[won?(board)[1]]}"
       break
     else
