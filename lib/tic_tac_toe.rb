@@ -107,7 +107,7 @@ def play(board)
     if draw?(board)
       return "draw"
     end
-    if won?(board)
+    if over?(board) && won?(board)
       return "#{board[won?(board)[1]]}"
     else
       turn (board)
