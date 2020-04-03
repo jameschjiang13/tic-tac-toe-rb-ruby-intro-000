@@ -130,6 +130,6 @@ def play(board)
     puts "draw"
   end
   if won?(board)
-    puts "#{board[won?(board)[1]]}"
+    puts "congratulates the winner #{board[won?(board)[1]]}"
   end
 end
